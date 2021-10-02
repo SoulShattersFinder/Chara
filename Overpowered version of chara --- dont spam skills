@@ -12,13 +12,21 @@ game.Players.LocalPlayer.Character.Head.HealthBar.Frame.PName.Text = " Chara"
 end
 end)
 game.Players.LocalPlayer.Character.Head.HealthBar.Frame.PName.TextColor3 = Color3.fromRGB(255, 0, 0)
-game:GetService("Players").LocalPlayer.PlayerGui.UI.Ui.MoveDebounceShower.Position = UDim2.new(0, 90000, 0, 900000)
 game.Players.LocalPlayer.Backpack.Main.WalkSpeed.Value = "60"
 game.Players.LocalPlayer.Character.HateArm:Remove()
 game.Players.LocalPlayer.Character.HeartLocket:Remove()
+game.Players.LocalPlayer.PlayerGui.UI.Ui.StaminaBar.Position = UDim2.new(0, 725, 0, 1025)
+game.Players.LocalPlayer.PlayerGui.UI.Ui.StaminaBar.Size = UDim2.new(0, 500, 0, 10)
+game.Players.LocalPlayer.PlayerGui.UI.Ui.ManaBar.Position = UDim2.new(0, 600, 0, 1000)
+game.Players.LocalPlayer.PlayerGui.UI.Ui.ManaBar.Size = UDim2.new(0, 751, 0, 10)
+game.Players.LocalPlayer.PlayerGui.CharaIndicator.Indicator.Position = UDim2.new(0, 850, 0, 900)
+game.Players.LocalPlayer.PlayerGui.CharaIndicator.Help.Text = " "
+game.Players.LocalPlayer.Character.Head.HealthBar.Frame.StaminaBar:Destroy()
+game:GetService("Players").LocalPlayer.PlayerGui.UI.Ui.StaminaBar.ImageLabel:Destroy()
+game:GetService("Players").LocalPlayer.PlayerGui.UI.Ui.MoveDebounceShower.Position = UDim2.new(0, 90000, 0, 900000)
 game.Players.LocalPlayer.PlayerGui.UI.Ui.Info:Destroy()
 game.Players.LocalPlayer.PlayerGui.UI.Ui.UpdateLog:Destroy()
-game.Players.LocalPlayer.PlayerGui.UI.Ui.UpdateLogInfo:Dest6roy()
+game.Players.LocalPlayer.PlayerGui.UI.Ui.UpdateLogInfo:Destroy()
 game.Players.LocalPlayer.PlayerGui.UI.Ui.SettingsButton:Destroy()
 game.Players.LocalPlayer.Character["Karma"]:Destroy()
 game:GetService("Players").LocalPlayer.PlayerGui.Chat.Frame.ChatBarParentFrame.Frame.BoxFrame.BackgroundColor3 = Color3.new(255, 0, 0)
